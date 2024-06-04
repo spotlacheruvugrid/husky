@@ -9,14 +9,7 @@ export const mockData = [
   },
 ];
 
-
-
-
-
-
-
-
-const                ListItems = ({ listData = mockData, bgColor = 'yellow' }) => {
+const ListItems = ({ listData = mockData, bgColor = 'yellow' }) => {
   console.log({ listData });
 
   return (

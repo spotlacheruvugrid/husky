@@ -1,2 +1,1 @@
-npx playwright test
-npm format:fix
+npm run pre-commit
