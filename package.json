@@ -16,7 +16,7 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*.{js,jsx,tsx,ts,md}": [
+    "*.{js,jsx,ts,tsx}": [
       "prettier --write --ignore-path .gitignore ."
     ]
   },
