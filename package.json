@@ -11,7 +11,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test:e2e": "playwright test",
-    "prepare": "husky"
+    "prepare": "husky",
+    "format:fix": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
     "next": "14.2.3",
@@ -46,6 +47,7 @@
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "postcss": "^8",
+    "prettier": "^3.3.0",
     "storybook": "^8.1.1",
     "tailwindcss": "^3.4.1",
     "typescript": "^5",

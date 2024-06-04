@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import React, { Fragment, Suspense, useEffect, useState } from "react";
-import { wait } from "../../helper/util";
+import React, { Fragment, Suspense, useEffect, useState } from 'react';
+import { wait } from '../../helper/util';
 
 const Grid = async ({ key }) => {
   const data = [];
@@ -9,22 +9,22 @@ const Grid = async ({ key }) => {
 
   const fetchData = async (param) => {
     const data = await fetch(`https://jsonplaceholder.typicode.com/${param}`, {
-      cache: "no-store",
+      cache: 'no-store',
     });
     const da = await data.json();
     setFinalRes(da.slice(1, 10));
   };
 
   useEffect(() => {
-    fetchData("photos");
+    fetchData('photos');
   }, []);
 
   return (
     <Fragment key={key}>
-      <div className="flex gap-5 justify-center items-center min-h-dvh flex-wrap">
+      <div className='flex gap-5 justify-center items-center min-h-dvh flex-wrap'>
         <button
           onClick={() => {
-            fetchData("posts");
+            fetchData('posts');
           }}
         >
           Update Data
@@ -32,7 +32,7 @@ const Grid = async ({ key }) => {
         {finalRes &&
           finalRes.map((el, i) => {
             return (
-              <div className="box" key={i}>
+              <div className='box' key={i}>
                 {el.title}
               </div>
             );

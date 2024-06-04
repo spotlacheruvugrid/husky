@@ -1,1 +1,2 @@
-npm test
+npx playwright test
+npm format:fix
