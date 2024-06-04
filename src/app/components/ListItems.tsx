@@ -11,6 +11,7 @@ export const mockData = [
 
 const ListItems = ({ listData = mockData, bgColor = 'yellow' }) => {
   console.log({ listData });
+  const d = '';
 
   return (
     <>
