@@ -13,11 +13,15 @@
     "test:e2e": "playwright test",
     "prepare": "husky",
     "format:fix": "prettier --write --ignore-path .gitignore .",
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged",
+    "lint:fix": "eslint --fix"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,md}": [
-      "prettier --write --ignore-path .gitignore ."
+      "prettier --write"
+    ],
+    "*.json": [
+      "prettier --write"
     ]
   },
   "dependencies": {
